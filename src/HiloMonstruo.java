@@ -13,7 +13,9 @@ public class HiloMonstruo extends Thread{
         try {
             System.out.println("Quiero entrar" + Thread.currentThread().getId());
             almacen.acquire();
-            
+            System.out.println("He entrado"+ Thread.currentThread().getId());
+            //comer galletas
+            almacen.release();
         } catch (Exception e) {
             // TODO: handle exception
         }
